@@ -325,27 +325,32 @@ body::-webkit-scrollbar-track {
 
 .progress__javaScript span {
     background-color: #69d5e4;
-    width: 50%;
+    width: 78%;
 }
 
 .progress__html span {
     background-color: #69e4c5;
-    width: 75%;
+    width: 80%;
 }
 
 .progress__reactJs span {
     background-color: #05f3b7;
-    width: 80%;
+    width: 78%;
 }
 
 .progress__reactNative span {
     background-color: #3888c9;
-    width: 40%;
+    width: 55%;
 }
 
 .progress__python span {
     background-color: #6f9bbe;
-    width: 40%;
+    width: 29%;
+}
+
+.progress__java span {
+    background-color: #6f9bbe;
+    width: 34%;
 }
 
 /* ------- FREE LANCER -------- */
