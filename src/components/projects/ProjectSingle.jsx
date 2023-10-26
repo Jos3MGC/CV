@@ -13,7 +13,7 @@ const ProjectSingle = ({ title, category, image, idProyect }) => {
 			}}
 		>
 			<Link to={`/projects/single-project/${idProyect}`} aria-label="Single Project">
-				<div className="rounded-xl shadow-lg h-full hover:shadow-xl cursor-pointer mb-10 sm:mb-0 bg-secondary-light dark:bg-ternary-dark">
+				<div className="rounded-xl shadow-lg h-full hover:shadow-xl cursor-pointer mb-14 sm:mb-14 bg-secondary-light dark:bg-ternary-dark">
 					<div className="contenedorProyectos">
 						<img
 							src={image}

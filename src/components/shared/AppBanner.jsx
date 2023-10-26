@@ -4,24 +4,13 @@ import developAnimation from "../../images/lottie/Animation - 1698187491921.json
 import { motion } from 'framer-motion';
 import { FaJava } from 'react-icons/fa';
 
+import pdfDocument from '../../images/pdf/JoseMariaGonzalezCruz-CV.pdf'
+
 const AppBanner = () => {
 
 	const options = {
 		animationData: developAnimation,
 		loop: true
-	};
-
-	const downloadPDF = () => {
-		// Reemplaza la URL con la ubicación del archivo PDF en tu proyecto.
-		const urlArchivo = 'src/images/pdf/JoseMariaGonzalezCruz-CV.pdf';
-
-		// Crea un enlace temporal para descargar el archivo.
-		const link = document.createElement('a');
-		link.href = urlArchivo;
-		link.download = 'JoseMariaGonzalezCruz-CV.pdf';
-		document.body.appendChild(link);
-		link.click();
-		document.body.removeChild(link);
 	};
 
 	const { View } = useLottie(options);
@@ -114,12 +103,15 @@ const AppBanner = () => {
 					}}
 					className="flex justify-center sm:block"
 				>
-					<button className="font-general-medium flex justify-center items-center w-36 sm:w-48 mt-12 mb-6 sm:mb-0 text-lg border border-indigo-200 dark:border-ternary-dark py-2.5 sm:py-3 shadow-lg rounded-lg bg-indigo-50 focus:ring-1 focus:ring-indigo-900 hover:bg-indigo-500 text-gray-500 hover:text-white duration-500">
+					<a
+						href={pdfDocument}
+						download="JoseMariaGonzalez-CV.pdf"
+						className="font-general-medium flex justify-center items-center w-36 sm:w-48 mt-12 mb-6 sm:mb-0 text-lg border border-indigo-200 dark:border-ternary-dark py-2.5 sm:py-3 shadow-lg rounded-lg bg-indigo-50 focus:ring-1 focus:ring-indigo-900 hover:bg-indigo-500 text-gray-500 hover:text-white duration-500">
 						<FiArrowDownCircle className="mr-2 sm:mr-3 h-5 w-5 sn:w-6 sm:h-6 duration-100"></FiArrowDownCircle>
-						<span className="text-sm sm:text-lg font-general-medium duration-100" onClick={downloadPDF}>
+						<span className="text-sm sm:text-lg font-general-medium duration-100">
 							Download CV
 						</span>
-					</button>
+					</a>
 				</motion.div>
 			</div>
 			<motion.div

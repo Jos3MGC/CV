@@ -11,23 +11,25 @@ const ProjectRelatedProjects = ({ id }) => {
 				{singleProjectData.RelatedProject.title}
 			</p>
 
-			<div className="grid grid-cols-1 sm:grid-cols-3 xlg:grid-cols-4 gap-10">
-				{singleProjectData.RelatedProject.Projects.map((project) => {
-					if (project.id !== parseInt(id)) {
-						return (
-							<Link key={project.id} to={`/projects/single-project/${project.id}`} aria-label="Single Project">
-								<div className="contenedorImagenes">
-									<img
-										src={project.img}
-										className="rounded-xl cursor-pointer"
-										alt={project.title}
-										key={project.id}
-									/>
-								</div>
-							</Link>
-						);
-					}
-				})}
+			<div className="flex justify-center align-center">
+				<div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-2 lg:grid-cols-3 gap-10">
+					{singleProjectData.RelatedProject.Projects.map((project) => {
+						if (project.id !== parseInt(id)) {
+							return (
+								<Link key={project.id} to={`/projects/single-project/${project.id}`} aria-label="Single Project">
+									<div className="contenedorImagenes">
+										<img
+											src={project.img}
+											className="rounded-xl cursor-pointer"
+											alt={project.title}
+											key={project.id}
+										/>
+									</div>
+								</Link>
+							);
+						}
+					})}
+				</div>
 			</div>
 		</div>
 	);
