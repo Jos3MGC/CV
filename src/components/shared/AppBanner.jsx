@@ -4,7 +4,7 @@ import developAnimation from "../../images/lottie/Animation - 1698187491921.json
 import { motion } from 'framer-motion';
 import { FaJava } from 'react-icons/fa';
 
-import pdfDocument from '../../images/pdf/JoseMariaGonzalezCruz-CV.pdf'
+import pdfDocument from '../../images/pdf/CV-JoseMariaGonzalezCruz.pdf';
 
 const AppBanner = () => {
 
