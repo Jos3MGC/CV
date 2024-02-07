@@ -18,10 +18,10 @@ const ProjectGallery = ({ id }) => {
 	};
 
 	return (
-		<div className="grid grid-cols-1 sm:grid-cols-3 sm:gap-10 mt-12">
+		<div className="grid grid-cols-1 p-10 md:p-0 sm:grid-cols-3 sm:gap-10 mt-12">
 			{filterData.map((project) => {
 				return (
-					<div className="contenedorImagenesMuestra">
+					<div className="contenedorImagenesMuestra mt-4">
 						<img
 							src={project}
 							className="rounded-xl cursor-pointer shadow-lg sm:shadow-none"

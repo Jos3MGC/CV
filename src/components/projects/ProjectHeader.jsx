@@ -23,10 +23,10 @@ const ProjectSingleHeader = ({ id }) => {
 	return (
 		<div>
 			<div className="flex justify-between items-end">
-				<p className="font-general-medium text-left text-3xl sm:text-4xl font-bold text-primary-dark dark:text-primary-light mt-14 sm:mt-20 mb-7">
+				<span className="font-general-medium text-left text-3xl sm:text-4xl font-bold text-primary-dark dark:text-primary-light mt-14 sm:mt-20 mb-7">
 					{filterData.title}
-				</p>
-				<button class="flex items-center justify-evenly bg-blue-500 hover:bg-blue-700 h-3/5 text-white font-bold py-2 px-4 rounded-full" onClick={() => { navigate(-1) }}>
+				</span>
+				<button class="flex items-center mt-14 sm:mt-20 mb-7 justify-evenly bg-blue-500 hover:bg-blue-700 h-3/5 text-white font-bold py-2 px-4 rounded-full" onClick={() => { navigate(-1) }}>
 					<BsFillArrowLeftCircleFill className="mx-2" /> Back
 				</button>
 			</div>
