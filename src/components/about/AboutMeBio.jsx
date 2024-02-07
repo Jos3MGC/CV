@@ -1,4 +1,4 @@
-import profileImage from '../../images/profile-pic.jpg';
+import profileImage from '../../images/profileImg.jpg';
 import {
 	FaAngular,
 	FaReact,
@@ -6,7 +6,7 @@ import {
 	FaPython
 } from 'react-icons/fa';
 import { BiLogoJavascript } from 'react-icons/bi';
-import { SiMysql } from 'react-icons/si';
+import { SiMysql, SiCsharp } from 'react-icons/si';
 
 const AboutMeBio = () => {
 
@@ -54,6 +54,10 @@ const AboutMeBio = () => {
 					<p className="mr-2 mt-2 rounded-full bg-amber-700 py-4 px-8 flex justify-center items-center text-base font-semibold text-white transition duration-300 ease-in-out hover:opacity-80 hover:shadow-lg">
 						<SiMysql className='mr-2' size={22} />
 						MySQL
+					</p>
+					<p className="mr-2 mt-2 rounded-full bg-blue-700 py-4 px-8 flex justify-center items-center text-base font-semibold text-white transition duration-300 ease-in-out hover:opacity-80 hover:shadow-lg">
+						<SiCsharp className='mr-2' size={22} />
+						C# .NET
 					</p>
 				</div>
 			</div>
